@@ -1,0 +1,18 @@
+@import 'variables';
+
+#results {
+    display: none;
+    margin-top: 20px;
+}
+
+#weather {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}

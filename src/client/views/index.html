@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+</head>
+<body>
+    <h1>Travel App</h1>
+    <form id="trip">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="results" style="display:none;">
+        <div id="weather"></div>
+        <img id="image" src="https://via.placeholder.com/150" alt="City Image">
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+</html>
