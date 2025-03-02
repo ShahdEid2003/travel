@@ -1,4 +1,7 @@
-@import 'variables';
-@import 'base';
-@import 'form';
-@import 'results';
+// main.scss
+
+@use 'variables' as *;
+@use 'base';
+@use 'form';
+@use 'results';
+@use 'responsive';
